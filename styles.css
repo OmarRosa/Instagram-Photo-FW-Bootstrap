@@ -1,0 +1,15 @@
+.col-9{
+    display:flex;
+    align-items:center;
+    padding-left:30px;
+}
+.btn-group{
+    margin-top: 0px;
+}
+.col-3{
+    display:flex;
+    margin-top: 10px;
+}
+.btn-primary{
+    height: 40px;
+}
