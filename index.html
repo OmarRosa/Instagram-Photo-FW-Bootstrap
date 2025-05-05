@@ -11,15 +11,15 @@
 
     </head>
     <body>
-        <div class="row">
-            <div class="col-9">
+        <nav class="navbar bg-body-tertiary">
+            <div class="col-9 d-flex align-items-center" style="padding-left: 30px;">
                 <i class="fa-solid fa-camera-retro fa-2xl"></i>
                 <h2>Instagram</h2>
 
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a New Post
                   </button>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -45,7 +45,7 @@
                     </div>
                   </div>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">Settings</button>
+                    <button type="button" class="btn btn-secondary"><i class="fa-solid fa-gear"></i></button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
@@ -54,11 +54,121 @@
                       <li><a class="dropdown-item" href="#">Accesibility</a></li>
                       <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                     </ul>
                   </div>
 
             </div>
+        </nav>
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-stop"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="wrapper" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 20px;">
+              <div class="header" style="display: flex; justify-content: space-between; width: 400px; margin-bottom: 10px;">
+                 <p>Happy Dog</p>
+                 <p>5/1/2025</p>
+              </div>
+              <a href="your_destination_url">
+                 <img class="picture" style =height:400px;width:400px;
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+                    </a>
+              <div class="wrapperBody" style="width: 400px; text-align: left;">
+                  <p><strong>100 Likes</strong></p>
+                  <p> This is a cute dog. Sitting happily in the sun. Must've had some treats right before the photo.</p>
+              </div>
+           </div>
+           <div class="wrapper" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 20px;">
+              <div class="header" style="display: flex; justify-content: space-between; width: 400px; margin-bottom: 10px;">
+                 <p>Cat</p>
+                 <p>5/2/2025</p>
+              </div>
+              <a href="your_destination_url">
+                 <img class="picture2" style =height:400px;width:400px;
+                    src="https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065" </a>
+              </a>
+            <div class="wrapperBody" style="width: 400px; text-align: left;">
+              <p><strong>2010 Likes</strong></p>
+              <p> This is a cute cat. So playful, I wonder what it is thinking.</p>
+            </div>
+           </div>
+           <div class="wrapper" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 20px;">
+              <div class="header" style="display: flex; justify-content: space-between; width: 400px; margin-bottom: 10px;">
+                 <p>Pizza</p>
+                 <p>5/3/2025</p>
+              </div>
+              <a href="your_destination_url">
+                 <img class="picture3" style =height:400px;width:400px;
+                    src="https://www.glutenfreeheaven.com/cdn/shop/products/Pizza_Crust500pxls_a54c8d1a-0137-4e9a-ac47-5afcc6a1e3c9.jpg?v=1462845970">
+                    </a>
+            <div class="wrapperBody" style="width: 400px; text-align: left;">
+                      <p><strong>483 Likes</strong></p>
+              <p> This pizza looks divine. I could eat this every single day.</p>
+            </div>
+           </div>     
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img class="picture3" style="height:400px; width:400px; padding:0 10px 30px 10px;"
+                  src="https://www.glutenfreeheaven.com/cdn/shop/products/Pizza_Crust500pxls_a54c8d1a-0137-4e9a-ac47-5afcc6a1e3c9.jpg?v=1462845970">
+                  </img>
+                </div>
+                <div class="col">
+                  <img class="picture2" style =height:370px;width:390px;
+                    src="https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065"></a>
+                </div>
+                <div class="col">
+                  <img class="picture" style =height:370px;width:390px;
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+                    </a>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <img class="picture3" style="height:400px; width:410px; padding:0 10px 30px 10px;"
+                    src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg">
+                    </img>
+                  </div>
+                  <div class="col">
+                    <img class="picture3" style="height:400px; width:410px; padding:0 10px 30px 10px;"
+                    src="https://bikeskinz.com/cdn/shop/files/LargeProductShot-CherryBlossom_1200x1200.jpg?v=1727290739">
+                    </img>
+                  </div>
+                  <div class="col">
+                    <img class="picture3" style="height:400px; width:400px; padding:0 10px 30px 10px;"
+                    src="https://i.ytimg.com/vi/Wq6wHGf1-ks/maxresdefault.jpg">
+                    </img>
+                  </div>
+                </div>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <img class="picture3" style="height:400px; width:400px; padding:0 10px 30px 10px;"
+                      src="https://www.homemaxrealtyinternational.com/wp-content/uploads/2024/02/IMG_6868.jpeg">
+                      </img>
+                    </div>
+                    <div class="col">
+                      <img class="picture3" style="height:400px; width:400px; padding:0 10px 30px 10px;"
+                    src="https://www.swordsofnorthshire.com/cdn/shop/files/85400.jpg?v=1709774914&width=1024">
+                    </img>
+                    </div>
+                    <div class="col">
+                      <img class="picture3" style="height:400px; width:400px; padding:0 10px 30px 10px;"
+                    src="https://biancazapatka.com/wp-content/uploads/2020/07/tiramisu-dessert-easy-vegan.jpg">
+                    </img>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
